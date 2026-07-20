@@ -1,0 +1,14 @@
+**The Rise of Renewable Energy – Summary**
+
+Renewable energy derives from naturally replenished sources—sunमुlight, wind, water, and geothermal heat—distinguishing it from fossil fuels that emit significant carbon dioxide when burned. Over the last twenty years, technological advances have sharply reduced the costs of solar panels and wind turbines, enabling clean energy to compete with, and often undercut, coal and natural gas in many regions.
+
+Key renewable technologies include:
+- **Solar power**: Photovoltaic cells convert sunlight directly upgrate electricity.
+- **Wind power**: Large turbines harness moving air to drive generators.
+- **Hydropower**: Water flow—commonly stored behind dams—turns turbines.
+
+Each technology offers strengths and faces limitations. Solar and wind are weather‑dependent, making energy storage (typically large batteries) essential for grid reliability. Hydropower relies on sufficient water flow but is limited by suitable sites.
+
+Global governmentsimus set ambitious targets for renewable shares in their energy mix. Combined with robust private investment, these policies have accelerated renewable deployment. Persistent challenges remain: expanding transmission infrastructure, recycling decommissioned panels and batteries, and managing the intermittency of variable sources.
+
+Despite these obstacles, analysts converge that renewable energy will be central to cutting global carbon emissions and mitigating climate change in the coming decades.

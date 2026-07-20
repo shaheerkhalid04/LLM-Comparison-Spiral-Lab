@@ -6,7 +6,9 @@ using the same prompt, then evaluate the results.
 ## What this project does
 
 1. Reads one source document.
-2. Sends the **same prompt** to three models (GPT, Gemini, Claude).
+2. Sends the **same prompt** to five free models (GPT-OSS, Gemma,
+   Nemotron, Hunyuan, Cohere) via [OpenRouter](https://openrouter.ai) —
+   one free API key covers all of them.
 3. Saves each model's summary to a separate file.
 4. Creates a comparison table and a report so you can score and conclude.
 
@@ -45,22 +47,15 @@ llm-summarization-comparison/
    pip install -r requirements.txt
    ```
 
-3. Add your API keys:
+3. Add your API key:
 
    ```
-   cp .env.example .env
+   cp .env.example .env        # on Windows: copy .env.example .env
    ```
 
-   Open `.env` and paste in your real keys. You need at least the keys for
-   the models you want to run. The script skips any model whose key is
-   missing and reports it, so you can start with just one provider if you
-   like.
-
-4. Load the keys into your shell (simple option):
-
-   ```
-   export $(cat .env | xargs)
-   ```
+   Get a free key at <https://openrouter.ai/keys> (sign up, no card
+   needed), then open `.env` and paste it in. The script reads `.env`
+   automatically when it runs — no need to export anything.
 
 ## Running
 

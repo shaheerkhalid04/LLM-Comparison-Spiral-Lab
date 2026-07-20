@@ -1,0 +1,7 @@
+**Summary: The Rise of Renewable Energy**
+
+Renewable energy is derived from naturally replenished sources, including sunlight, wind, water, and geothermal heat. Unlike fossil fuels, which release carbon dioxide, renewable sources produce little to no greenhouse gas emissions during operation. Due to a sharp decline in the costs of solar panels and wind turbines over the last twenty years, clean energy is now competitive with, or even cheaper than, coal and natural gas.
+
+The document outlines three primary technologies: solar power, which uses photovoltaic cells; wind power, which utilizes turbines driven by air; and hydropower, which relies on moving water. Because solar and wind are dependent on weather and time of day, energy storage via large batteries is essential for grid reliability.
+
+While government targets and private investment have fueled rapid growth, several challenges persist. These include the need for new transmission lines, the recycling of old batteries and panels, and managing the variable nature of certain energy sources. Nevertheless, analysts suggest that renewable energy will be central to slowing climate change and reducing global carbon emissions in the coming decades.

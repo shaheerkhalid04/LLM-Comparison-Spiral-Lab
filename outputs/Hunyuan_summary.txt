@@ -1,0 +1,5 @@
+The document outlines the rise of renewable energy. Renewables come from naturally replenished sources like sunlight, wind, water, and geothermal heat, producing little or no greenhouse gases in operation, unlike fossil fuels. Over two decades, solar and wind costs have dropped, making them competitive with or cheaper than coal and gas.
+
+Key technologies include solar (photovoltaic cells), wind (turbines), and hydropower (moving water turning turbines). Solar and wind are weather- and daylight-dependent, so batteries are needed for storage and grid reliability.
+
+Governments have set targets to raise renewable shares, and with private investment, growth has been rapid. Remaining challenges are building transmission lines, recycling old panels and batteries, and managing source variability. Most analysts agree renewables will be central to cutting global carbon emissions and slowing climate change in coming decades. (147 words)

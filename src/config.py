@@ -21,23 +21,35 @@ SHARED_PROMPT = (
 # - "provider" : which API client to use (see clients.py).
 # - "model"    : the exact model id the provider expects.
 #
-# You need an API key for each provider you actually want to run.
-# Set them as environment variables before running (see README).
+# All three run through OpenRouter (openrouter.ai) on their free tier,
+# so one free API key covers everything. Ids ending in ":free" cost
+# nothing. Browse https://openrouter.ai/models?max_price=0 to swap in
+# other free models.
 MODELS = [
     {
-        "label": "GPT",
-        "provider": "openai",
-        "model": "gpt-4o-mini",
+        "label": "GPT-OSS",
+        "provider": "openrouter",
+        "model": "openai/gpt-oss-20b:free",
     },
     {
-        "label": "Gemini",
-        "provider": "gemini",
-        "model": "gemini-1.5-flash",
+        "label": "Gemma",
+        "provider": "openrouter",
+        "model": "google/gemma-4-26b-a4b-it:free",
     },
     {
-        "label": "Claude",
-        "provider": "anthropic",
-        "model": "claude-3-5-sonnet-20241022",
+        "label": "Nemotron",
+        "provider": "openrouter",
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+    },
+    {
+        "label": "Hunyuan",
+        "provider": "openrouter",
+        "model": "tencent/hy3:free",
+    },
+    {
+        "label": "Cohere",
+        "provider": "openrouter",
+        "model": "cohere/north-mini-code:free",
     },
 ]
 

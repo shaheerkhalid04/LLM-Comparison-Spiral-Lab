@@ -15,8 +15,14 @@ Run it from the project root with:
 
 import os
 
+from dotenv import load_dotenv
+
 import config
 import clients
+
+# Read the API key from the .env file in the project root, so you don't
+# have to set environment variables by hand.
+load_dotenv()
 
 
 def read_document(path):
@@ -80,6 +86,12 @@ def write_comparison_table():
     os.makedirs(config.RESULTS_DIR, exist_ok=True)
     path = os.path.join(config.RESULTS_DIR, "comparison_table.md")
 
+    # Don't overwrite a table you already filled in. Delete the file if
+    # you want a fresh blank one.
+    if os.path.exists(path):
+        print("  (keeping existing " + path + ")")
+        return path
+
     header = "| Model | " + " | ".join(config.METRICS) + " | Overall Score |"
     divider = "| --- " * (len(config.METRICS) + 2) + "|"
 
@@ -103,6 +115,12 @@ def write_report_scaffold():
     """Write a starter report file for observations and the conclusion."""
     os.makedirs(config.RESULTS_DIR, exist_ok=True)
     path = os.path.join(config.RESULTS_DIR, "report.md")
+
+    # Don't overwrite a report you already wrote. Delete the file if you
+    # want a fresh scaffold.
+    if os.path.exists(path):
+        print("  (keeping existing " + path + ")")
+        return path
 
     lines = [
         "# LLM Comparison - Document Summarization",

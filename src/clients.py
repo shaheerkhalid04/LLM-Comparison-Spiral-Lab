@@ -1,70 +1,49 @@
 """
-Small wrapper functions that call each LLM provider's API.
+Small wrapper that calls the OpenRouter API.
 
-Each function takes a prompt string and returns the model's text reply.
-They all look the same on the outside, so the main script does not need to
-know the details of each provider.
+OpenRouter gives access to many different LLMs through one website, one
+API key, and one request format (the same format as OpenAI's library).
+Models whose ids end in ":free" cost nothing to use, which is perfect
+for this assignment.
 
-If a provider's library is not installed, or the API key is missing, the
-function raises a clear error that the main script catches and reports.
+If the library is not installed, or the API key is missing, the function
+raises a clear error that the main script catches and reports.
 """
 
 import os
 
 
-def call_openai(prompt, model):
-    """Send the prompt to an OpenAI model (e.g. GPT)."""
+def call_openrouter(prompt, model):
+    """Send the prompt to a model hosted on OpenRouter."""
     from openai import OpenAI
 
-    api_key = os.environ.get("OPENAI_API_KEY")
+    api_key = os.environ.get("OPENROUTER_API_KEY")
     if not api_key:
-        raise RuntimeError("OPENAI_API_KEY is not set.")
+        raise RuntimeError(
+            "OPENROUTER_API_KEY is not set. "
+            "Copy .env.example to .env and paste in your key."
+        )
 
-    client = OpenAI(api_key=api_key)
+    client = OpenAI(
+        base_url="https://openrouter.ai/api/v1",
+        api_key=api_key,
+    )
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=500,
+        # Some free models "think" before answering, which also uses up
+        # tokens. 2000 leaves plenty of room for a 200-word summary.
+        max_tokens=2000,
     )
-    return response.choices[0].message.content.strip()
-
-
-def call_gemini(prompt, model):
-    """Send the prompt to a Google Gemini model."""
-    import google.generativeai as genai
-
-    api_key = os.environ.get("GOOGLE_API_KEY")
-    if not api_key:
-        raise RuntimeError("GOOGLE_API_KEY is not set.")
-
-    genai.configure(api_key=api_key)
-    gemini_model = genai.GenerativeModel(model)
-    response = gemini_model.generate_content(prompt)
-    return response.text.strip()
-
-
-def call_anthropic(prompt, model):
-    """Send the prompt to an Anthropic model (Claude)."""
-    import anthropic
-
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        raise RuntimeError("ANTHROPIC_API_KEY is not set.")
-
-    client = anthropic.Anthropic(api_key=api_key)
-    response = client.messages.create(
-        model=model,
-        max_tokens=500,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return response.content[0].text.strip()
+    text = (response.choices[0].message.content or "").strip()
+    if not text:
+        raise RuntimeError("The model returned an empty reply. Try again.")
+    return text
 
 
 # A lookup table so the main script can pick the right function by name.
 PROVIDERS = {
-    "openai": call_openai,
-    "gemini": call_gemini,
-    "anthropic": call_anthropic,
+    "openrouter": call_openrouter,
 }
 
 

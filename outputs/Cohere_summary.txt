@@ -1,0 +1,7 @@
+**Summary**
+
+Renewable energy originates from naturally replenished sources such as sunlight, wind, water, and geothermal heat. Unlike fossil fuels, which emit carbon dioxide after millions of years of formation, renewables generate little or no greenhouse gases during operation. Over the past two decades, declining costs for solar panels and wind turbines have made clean power competitive with, and often cheaper than, coal and natural gas.
+
+Solar power uses photovoltaic cells to convert sunlight directly into electricity; wind power harnesses turbines that spin generators as air passes; and hydropower employs moving water, often stored behind dams, to drive turbines. Each technology has distinct strengths and drawbacks. Solar and wind are weather‑dependent, so large‑scale battery storage is essential for grid reliability.
+
+Governments worldwide have set renewable‑energy targets, and combined with private investment, this has spurred rapid growth. Challenges remain, including the need for new transmission lines, recycling of panels and batteries, and managing the variability of certain sources. Nonetheless, analysts agree that renewables will be central to cutting global carbon emissions and mitigating climate change in the coming decades.

@@ -1,0 +1,31 @@
+Summarize the following document in a clear, well-structured way. Keep the summary concise (about 150-200 words). Only use information that is present in the document. Do not add outside facts.
+
+Document:
+The Rise of Renewable Energy
+
+Renewable energy comes from sources that are naturally replenished, such as
+sunlight, wind, water, and geothermal heat. Unlike fossil fuels, which take
+millions of years to form and release carbon dioxide when burned, renewable
+sources produce little or no greenhouse gas emissions during operation. Over
+the past two decades, the cost of solar panels and wind turbines has fallen
+sharply, making clean energy competitive with, and in many places cheaper
+than, coal and natural gas.
+
+Solar power captures energy from the sun using photovoltaic cells that convert
+light directly into electricity. Wind power uses large turbines whose blades
+spin as air moves past them, driving a generator. Hydropower relies on moving
+water, often stored behind dams, to turn turbines. Each of these technologies
+has strengths and limitations. Solar and wind depend on the weather and time
+of day, which makes energy storage, usually in large batteries, an important
+part of a reliable clean grid.
+
+Governments around the world have set targets to increase the share of
+renewables in their energy mix. These policies, combined with private
+investment, have driven rapid growth. However, challenges remain: building new
+transmission lines, recycling old panels and batteries, and managing the
+variable nature of some sources. Despite these hurdles, most analysts agree
+that renewable energy will play a central role in reducing global carbon
+emissions and slowing climate change in the decades ahead.
+
+Replace this file with your own article, research paper, or PDF text before
+running the comparison.

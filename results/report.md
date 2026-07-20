@@ -1,7 +1,7 @@
 # LLM Comparison - Document Summarization
 
 ## Document Used
-"The Rise of Renewable Energy" — the sample article included with the
+"The Rise of Renewable Energy", the sample article included with the
 project (documents/source_document.txt). It is a short explainer of about
 230 words / 3 paragraphs covering what renewable energy is, how solar,
 wind, and hydropower work, and the policy drivers and challenges of the
@@ -11,11 +11,11 @@ transition.
 All five models were called through OpenRouter's free tier with the
 exact same prompt on 2026-07-20:
 
-- **GPT-OSS** — openai/gpt-oss-20b:free
-- **Gemma** — google/gemma-4-26b-a4b-it:free
-- **Nemotron** — nvidia/nemotron-3-super-120b-a12b:free
-- **Hunyuan** — tencent/hy3:free
-- **Cohere** — cohere/north-mini-code:free
+- **GPT-OSS**: openai/gpt-oss-20b:free
+- **Gemma**: google/gemma-4-26b-a4b-it:free
+- **Nemotron**: nvidia/nemotron-3-super-120b-a12b:free
+- **Hunyuan**: tencent/hy3:free
+- **Cohere**: cohere/north-mini-code:free
 
 ## Prompt Used
 ```
@@ -57,9 +57,10 @@ See `comparison_table.md` for the scores.
   hydropower remark.
 - Hallucinations: Gemma, Nemotron, Hunyuan, and Cohere added nothing
   that is not in the document. GPT-OSS invented a claim: "Hydropower
-  relies on sufficient water flow but is limited by suitable sites" —
-  plausible, but the source never discusses hydropower's limitations,
-  so this violates the "do not add outside facts" instruction.
+  relies on sufficient water flow but is limited by suitable sites".
+  It sounds plausible, but the source never discusses hydropower's
+  limitations, so it violates the "do not add outside facts"
+  instruction.
 
 ## Conclusion
 Gemma performed best overall. It was the only model that combined
@@ -70,5 +71,5 @@ but Nemotron lacks structure (one dense paragraph) and Hunyuan added a
 needless word count and no title. Cohere was well organized but garbled
 one factual sentence. GPT-OSS finished last: despite good formatting
 instincts, it produced corrupted words and one invented claim about
-hydropower — exactly the failure modes this evaluation is designed to
-catch.
+hydropower, which are exactly the failure modes this evaluation is
+designed to catch.

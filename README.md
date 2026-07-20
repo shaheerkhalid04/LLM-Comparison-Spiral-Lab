@@ -7,7 +7,7 @@ using the same prompt, then evaluate the results.
 
 1. Reads one source document.
 2. Sends the **same prompt** to five free models (GPT-OSS, Gemma,
-   Nemotron, Hunyuan, Cohere) via [OpenRouter](https://openrouter.ai) —
+   Nemotron, Hunyuan, Cohere) via [OpenRouter](https://openrouter.ai);
    one free API key covers all of them.
 3. Saves each model's summary to a separate file.
 4. Creates a comparison table and a report so you can score and conclude.
@@ -55,7 +55,7 @@ llm-summarization-comparison/
 
    Get a free key at <https://openrouter.ai/keys> (sign up, no card
    needed), then open `.env` and paste it in. The script reads `.env`
-   automatically when it runs — no need to export anything.
+   automatically when it runs, so there is no need to export anything.
 
 ## Running
 
